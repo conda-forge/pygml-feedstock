@@ -1,5 +1,5 @@
 {% set name = "pygml" %}
-{% set version = "0.2.2" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0f20639344ec3c1779fec7953d934a3909e96b4db0b18f91c3340375f4a99b01
+  sha256: eeb4175daa25200881b90c071df3d9249079b7e0c78485d7d773974556892b16
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
